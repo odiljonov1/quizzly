@@ -1,7 +1,8 @@
 # quizzly
 
 A new Flutter project.
-
+The program works in 3 different languages: Uzbek, Russian, English,
+The program is mainly suitable for those who test their knowledge in mathematics. The first state of the program Quizzly
 ## Getting Started
 
 This project is a starting point for a Flutter application.
