@@ -1,0 +1,14 @@
+{
+    "str_quizzly" :"QUIZZLY",
+    "str_welcome" :"Quizzly-ga xush kelibsiz",
+    "str_with" :"Quizzly yordamida siz fikrlash, aql-idrok va\nmantiqiy ko'nikmalaringizni oshirishingiz mumkin.",
+    "str_choose" :"Tegishli darajani tanlang",
+    "str_level1" :"1-daraja",
+    "str_level2" :"2-daraja",
+    "str_level3" :"3-daraja",
+    "str_score" :"Sizning ballingiz",
+    "str_correct" :"To'g'ri",
+    "str_wrong" :"Noto'g'ri",
+    "str_play" :"Yana o'ynang",
+    "str_home" :"Uy"
+}

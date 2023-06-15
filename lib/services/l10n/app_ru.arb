@@ -1,0 +1,14 @@
+{
+"str_quizzly": "QUIZZLY",
+"str_welcome": "Добро пожаловать в Quizly!",
+"str_with": "С Quizly вы можете улучшить свое мышление, интеллект и логические навыки.",
+"str_choose": "Выбрать этап",
+"str_level1": "Уровень 1",
+"str_level2": "Уровень 2",
+"str_level3": "Уровень 3",
+"str_score": "Ваш результат",
+"str_correct": "Правильно",
+"str_wrong": "Ошибка",
+"str_play": "Повторить",
+"str_home": "Главный"
+}

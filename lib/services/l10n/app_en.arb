@@ -1,0 +1,14 @@
+{
+    "str_quizzly" :"QUIZZLY",
+    "str_welcome" :"Welcome to Quizzly",
+    "str_with" :"With Quizzly, you can improve\nyour thinking, intelligence and\nlogical skills.",
+    "str_choose" :"Choose the appropriate level",
+    "str_level1" :"Level 1",
+    "str_level2" :"Level 2",
+    "str_level3" :"Level 3",
+    "str_score" :"Your Score",
+    "str_correct" :"Correct",
+    "str_wrong" :"Wrong",
+    "str_play" :"Play again",
+    "str_home" :"Home"
+}
