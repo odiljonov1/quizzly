@@ -1,13 +1,17 @@
+import 'package:circle_flags/circle_flags.dart';
 import 'package:flutter/material.dart';
 import 'package:quizzly/controller/first_page_controller.dart';
+import 'package:quizzly/controller/lang_controller.dart';
 import 'package:quizzly/services/constants/images/app_image.dart';
 import 'package:quizzly/services/constants/text_style/text_styles.dart';
+import 'package:quizzly/services/extension/context_ext.dart';
 import 'package:quizzly/services/l10n/app_localizations.dart';
 import '../components/home_page_components.dart';
 import '../services/constants/colors/app_colors.dart';
 
 class FirstPage extends StatefulWidget {
   static const id = "/FirstPage";
+
   const FirstPage({Key? key}) : super(key: key);
 
   @override
@@ -20,7 +24,7 @@ class _FirstPageState extends State<FirstPage> {
 
   @override
   void didChangeDependencies() {
-   l10n = AppLocalizations.of(context);
+    l10n = AppLocalizations.of(context);
     super.didChangeDependencies();
   }
 
@@ -47,9 +51,36 @@ class _FirstPageState extends State<FirstPage> {
           padding: const EdgeInsets.only(left: 25, right: 25),
           child: Column(
             children: [
+              Align(
+                alignment: const Alignment(0.9, 0),
+                child: ValueListenableBuilder(
+                  valueListenable: LangController.currentLang,
+                  builder: (context, lang, _) {
+                    return DropdownButton(
+                      dropdownColor: Colors.deepPurple,
+                      value: lang,
+                      items: LangController.instance.languages.map(
+                        (e) => DropdownMenuItem(
+                      value: e,
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CircleFlag(e, size: 20),
+                          const SizedBox(width: 10),
+                          Text((e == "us" ? "en" : e).toUpperCase()),
+                        ],
+                      ),
+                    ),
+                    ).toList(),// End Map,
+                      onChanged: LangController.instance.changeLang,
+                    );
+                  },
+                ),
+              ),
               Padding(
                 padding: const EdgeInsets.only(
-                  top: 50,
+                  top: 20,
                 ),
                 child: Text(
                   l10n.str_quizzly,

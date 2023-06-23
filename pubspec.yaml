@@ -24,6 +24,13 @@ dependencies:
   intl: ^0.18.0
 
 
+  #circle_flags
+  circle_flags: ^1.0.4
+  #storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
